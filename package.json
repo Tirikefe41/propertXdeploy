@@ -1,0 +1,30 @@
+{
+  "name": "px-bootcamp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "set NODE_ENV=production&node --inspect ./bin/www",
+    "dev-server": "set DEBUG=property-exchange:*&nodemon --inspect ./bin/www",
+    "dev": "set DEBUG=property-exchange:*&concurrently --kill-others \"nodemon --inspect ./bin/www\" \"cd ./client && npm start\""
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^4.1.2",
+    "cookie-parser": "~1.4.3",
+    "custom-env": "^1.0.2",
+    "debug": "~2.6.9",
+    "dotenv": "^15.0.0",
+    "express": "~4.16.0",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "~1.9.0",
+    "pg": "^8.0.3",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.19.0",
+    "sequelize-cli": "^6.4.1",
+    "web3": "^1.2.5-rc.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  }
+}
