@@ -2,8 +2,13 @@
   "name": "px-bootcamp",
   "version": "0.0.0",
   "private": true,
+  "engine": {
+              "node": "16.13.1",
+              "npm": "8.1.2"
+              },
   "scripts": {
-    "start": "set NODE_ENV=production&node --inspect ./bin/www",
+    "start": "set NODE_ENV=production&node ./bin/www",
+    "heroku-postbuild": "cd client && npm install && npm run build",
     "dev-server": "set DEBUG=property-exchange:*&nodemon --inspect ./bin/www",
     "dev": "set DEBUG=property-exchange:*&concurrently --kill-others \"nodemon --inspect ./bin/www\" \"cd ./client && npm start\""
   },
