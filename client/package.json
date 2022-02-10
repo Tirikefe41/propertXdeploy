@@ -19,6 +19,9 @@
     "typescript": "^3.6.3",
     "web3": "^1.2.5-rc.0"
   },
+  "devServer": {
+    "disableHostCheck": true
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
