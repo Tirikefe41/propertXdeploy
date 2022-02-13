@@ -2,7 +2,7 @@ const debug = require("debug")("property-exchange:db-connection");
 const { Sequelize, DataTypes } = require("sequelize");
 const { DB_USER, DB_PWD, DB_HOST, DB_PORT, DB_NAME } = process.env;
 
-const dbUrl = `postgres://${DB_USER}:${DB_PWD}@${DB_HOST}:${DB_PORT}/${DB_NAME}`;
+const dbUrl = `postgres://${DB_USER}:${DB_PWD}@${DB_HOST}:${DB_PORT}/${DB_NAME}?ssl=true`;
 
 const sequelize = new Sequelize(dbUrl);
 
