@@ -72,7 +72,7 @@ async function signupFunction(req, res, next) {
       user: result
     });
   } catch (err) {
-    console.log("error")
+    console.log(err)
     debug(err);
     return res.status(500).json({
       message: "Account registration failed. Try again!",
