@@ -6,6 +6,7 @@
 .env
 .env.development
 .secret
+.txt
 
 # dependencies
 /node_modules
